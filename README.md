@@ -40,5 +40,6 @@
 - randomColor()：掌天地五彩，以意動色
 - getLuminance()：測光明幽暗，辨陰陽流轉
 - getTextColorByLuminance()：以明制字，以暗生白，保萬物可視之道
+
 🕯 實戰招式：
 於元件之「矩」內構建靈場，點之則動，色隨意轉，字因色明，妙不可言。
