@@ -23,7 +23,8 @@ target_link_libraries(shared_utils INTERFACE Qt6::Quick Qt6::Qml)
 # Include QML modules
 add_subdirectory(qml-hello)
 add_subdirectory(qml_interaction)
+add_subdirectory(qml_javascript_inline)
+add_subdirectory(qml_javascript_import)
 
 # Add more modules below as needed:
 # add_subdirectory(qml_basic)
-add_subdirectory(qml_javascript_inline)

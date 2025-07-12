@@ -36,6 +36,7 @@
 
 ## 🥋 第二式 · qml_javascript_inline — 玄彩行氣
 「色動而氣隨，氣動而神轉」，此式講究以 JavaScript 內功導引 QML 元件之靈脈，使色彩流轉、生生不息。
+
 🌀 功法要義：
 - randomColor()：掌天地五彩，以意動色
 - getLuminance()：測光明幽暗，辨陰陽流轉
@@ -43,3 +44,31 @@
 
 🕯 實戰招式：
 於元件之「矩」內構建靈場，點之則動，色隨意轉，字因色明，妙不可言。
+
+---
+
+## 🥋 第三式 · qml_javascript_import — 模組聚氣
+「散功不及密法，心法不若門派。」此式講究邏輯封裝與模組導入，將散落於元件的意識引導，聚合為一脈內功之源。
+
+📖 修煉緣起
+由第二式 inline JS 演化而來，為追求模組解耦與邏輯再利用之道，本式將 JavaScript 心法獨立成工具模組，使元件只專注於靈氣運作，不涉運算之術。
+
+📦 模組引用正確法門
+qt_add_qml_module 運用 RESOURCES resources/javascripts/color_utils.js 管理資源，確保模組隨應用打包
+import "qrc:/qt/qml/qml_javascript_import/resources/javascripts/color_utils.js" as ColorUtils
+- 🧭 路徑心法 qrc:/qt/qml/<Module>/<ResourcePath>
+- 🐚 命名心法 as ColorUtils 清楚命名，引導調用心法，不雜不亂
+- 💡 修煉秘訣：資源置於 resources/javascripts/ 乃結構分明之道，有助於日後 Singleton 模組、C++ 封裝等進階功法的融合與拓展。
+
+🎯 功法演練 · 實戰招式
+於元件呼吸之時，引導色彩靈氣交融：
+textContainer.color = ColorUtils.randomColor()
+textChangeColor.color = ColorUtils.getTextColorByLuminance(textContainer.color)
+此二式互為陰陽，合為「色·氣·明」三元運轉，形成 UI 的流動之道。
+
+🧠 命名心法 · ColorUtils 之道
+命名如功法，需：
+- 📣 意圖明確：見名知義，不藏技術於字
+- 🔧 功能可擴：未來可加入 hexToRgb(), blendColor() 等心法
+- ✨ 模組定位清晰：ColorUtils 為「色之器靈」，與主體分工明確
+
