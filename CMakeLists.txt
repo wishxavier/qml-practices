@@ -25,6 +25,7 @@ add_subdirectory(qml-hello)
 add_subdirectory(qml_interaction)
 add_subdirectory(qml_javascript_inline)
 add_subdirectory(qml_javascript_import)
+add_subdirectory(qml_javascript_singleton)
 
 # Add more modules below as needed:
 # add_subdirectory(qml_basic)

@@ -72,3 +72,23 @@ textChangeColor.color = ColorUtils.getTextColorByLuminance(textContainer.color)
 - 🔧 功能可擴：未來可加入 hexToRgb(), blendColor() 等心法
 - ✨ 模組定位清晰：ColorUtils 為「色之器靈」，與主體分工明確
 
+---
+
+## 🥋 第四式 · qml_javascript_singleton — 封靈注型心法
+
+此式為第三式模組封裝進階延伸，將 JavaScript 工具封裝為 QML Singleton 容器，以達元件不重複、調用統一之效。
+
+📖 修煉概念  
+- 單例封裝：透過 QML Module 註冊 Singleton 型別
+- JS 導氣：使用 `color_utils.js` 作為邏輯支撐
+- UI 調用：在 QML 中呼叫 `ColorUtils` 如同本地函式，乾淨易用
+
+🌀 精妙設計  
+- `color_utils.qml` 為唯一顯化之器靈，內部 `import js` 暗合陰陽  
+- `Main.qml` 與 Singleton 無需 contextProperty，直接取用，減少耦合
+
+🔧 建議檢視方向  
+- 未來可擴充 `ColorUtils` 為 MVVM 中共享工具  
+- 亦可轉為 Singleton C++ 型別，達成更強效封裝
+
+✨ 本式雖精簡，氣脈已通，為無刃宗邁向邏輯抽象與資料同步之關鍵轉捩。
