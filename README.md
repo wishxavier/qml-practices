@@ -92,3 +92,27 @@ textChangeColor.color = ColorUtils.getTextColorByLuminance(textContainer.color)
 - 亦可轉為 Singleton C++ 型別，達成更強效封裝
 
 ✨ 本式雖精簡，氣脈已通，為無刃宗邁向邏輯抽象與資料同步之關鍵轉捩。
+
+---
+
+## 🥋 第五式 · qml_singleton_element — 器靈顯化心法
+
+C++ 為骨，QML 為靈；封入元界，一氣通真。
+
+🧭 式緣溯源 · 封靈轉骨
+此式承接第四式的 JavaScript 封靈之道，將原本的色彩腕法煉入 C++ 靈骨──以 QML_ELEMENT 明其顯化，以 QML_SINGLETON 定其唯一，合為元界常駐色靈器具。
+JS 腕法猶如氣勁揮動，而 C++ 顯化則是靈骨鑄型──此式正式步入兵器堂之道。
+
+⚙ 鍛器之法 · 色靈封裝
+🔹 類別：ColorUtils，位於 shared_utils/color_utils/color_utils.hpp
+🔮 標記：
+Q_OBJECT 為 Qt 元靈啟動之符
+QML_ELEMENT 為 QML 元界登錄之證
+QML_SINGLETON 為唯一器靈之封印
+🔮 方法：
+randomColor()：調五彩之靈氣
+getTextColorByLuminance()：定字色明暗，保視覺通天
+
+🧙‍ 式義總結 · 鍛器堂序
+本式不僅技術上轉為 C++ 顯化，更結構上正式納入 shared_utils 分堂，為 Solution-style 模組化修煉奠定兵器堂基石。
+若未來需擴展色彩配置、動態主題、明暗模式調節，皆可在此骨架之上加掛器件──色靈之堂，由此鑄成。

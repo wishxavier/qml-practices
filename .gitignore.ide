@@ -1,0 +1,31 @@
+# Qt Creator
+*.pro.user*
+*.qbs.user*
+CMakeLists.txt.user*
+/.qmake.cache
+/.qmake.stash
+
+# Vim
+.*.swp
+
+# XEmacs
+*.flc
+
+# Visual Studio
+*.ib_pdb_index
+*.idb
+*.ilk
+*.pdb
+*.sln
+*.suo
+*.vcproj
+*vcproj.*.*.user
+*.ncb
+*.sdf
+*.opensdf
+*.vcxproj
+*vcxproj.*
+
+# MinGW
+*.Debug
+*.Release

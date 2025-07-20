@@ -1,7 +1,7 @@
-﻿cmake_minimum_required(VERSION 3.21)
+﻿cmake_minimum_required(VERSION 3.16)
 project(QmlPractices)
 
-find_package(Qt6 REQUIRED COMPONENTS Quick)
+find_package(Qt6 REQUIRED COMPONENTS Quick Gui)
 qt_standard_project_setup(REQUIRES 6.8)
 
 # Merge .gitignore.core and .gitignore.ide into a single .gitignore file
@@ -15,17 +15,16 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-# 創建 header-only 的共享庫
-add_library(shared_utils INTERFACE)
-target_include_directories(shared_utils INTERFACE shared_utils)
-target_link_libraries(shared_utils INTERFACE Qt6::Quick Qt6::Qml)
+# for shared libraries
+add_subdirectory(shared_utils)
 
 # Include QML modules
 add_subdirectory(qml-hello)
-add_subdirectory(qml_interaction)
+# add_subdirectory(qml_interaction)
 add_subdirectory(qml_javascript_inline)
 add_subdirectory(qml_javascript_import)
 add_subdirectory(qml_javascript_singleton)
+add_subdirectory(qml_singleton_element)
 
 # Add more modules below as needed:
 # add_subdirectory(qml_basic)
